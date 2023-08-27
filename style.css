@@ -205,7 +205,7 @@ form button {
 }
 
 #links {
-  width: 20vw;
+  max-width: 30%;
 }
 
 .linkImg {
