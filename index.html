@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fighting Sparrow</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <script defer src="script.js"></script>
+  <script>
+  </script>
+</head>
+<body>
+  <header class="header">
+      <nav class="nav-bar">
+            <a href="#">
+              <img class="header--img" src="/Images/Header.png">
+            </a>
+
+          <ul class="nav__links">
+            
+            <li class="nav__item">
+              
+              <a data-target="#bio" class="nav__link" 
+               href="#bio">Bio</a>
+              
+               <div id="bio" class="modal">
+                <div class="modal__header">
+                  <div class="title">Biography</div>
+                  <button data-close class="closeBtn">&times;</button>
+                </div>
+                <div class="modal__body">
+                  <p>
+                  Fighting Sparrow is a celtic-punk band based in Niš, Serbia; established in 2018.<br>
+                  <br>
+                  Our music style is a mixture of punk energy and traditional celtic music, where melodies of a tin whistle and banjo (or mandolin or irish bouzuki) cut through the heavy guitar riffs, and all that followed by lyrics that describe everyday ups and downs of a man. <br>
+                  <br>
+                  By now we had plenty of performances in Serbia and Bulgaria and we're preparing our debut album.<br>
+                  <br>
+                  Also, we released a single with an official video as well, called <a href="https://youtu.be/Lg4XlX6Cllg" style="color: #b69202;"> „Drink it“ </a>, which is available on our <a href="https://www.youtube.com/@fightingsparrow3636" style="color: #b69202;"> YouTube </a> channel.<br>
+                  </p>
+                </div>
+              </div>
+            
+            </li>
+            <li class="nav__item">
+              
+              <a data-target="#contact" class="nav__link" 
+              href="#contact">Contact</a>
+              
+              <div id="contact" class="modal">
+                <div class="modal__header">
+                  <div class="title">Contact us</div>
+                  <button data-close class="closeBtn">&times;</button>
+                </div>
+                <div class="modal__body">
+                  <div class="container">
+                    <form id="contact-form" action="https://formsubmit.co/fighting.sparrow18@gmail.com" method="POST">
+                      <input type="text" name="name" id="name" placeholder="Your Name" required>
+                      <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+                      <textarea name="message" id="textarea" placeholder="How can we help you? :)" required></textarea>
+                      <button type="submit">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            
+            </li>
+            <li class="nav__item">
+              
+              <a data-target="#links" class="nav__link" 
+              href="#links">Links</a>
+              
+              <div id="links" class="modal">
+                <div class="modal__header">
+                  <div class="title">Links</div>
+                  <button data-close class="closeBtn">&times;</button>
+                </div>
+                <div class="modal__body" class="linkImg">
+                  <a href="https://www.facebook.com/fighting.sparrow18/"><img src="/Images/fb.png" class="linkImg"></a>
+                  <a href="https://www.instagram.com/fighting_sparrow018/"><img src="/Images/ig.png" class="linkImg"></a>
+                  <a href="https://www.youtube.com/@fightingsparrow3636"><img src="/Images/yt.png" class="linkImg"></a>
+                </div>
+              </div>
+            
+            </li>
+          
+          </ul>
+      </nav>
+
+      <!-- <img class="header--img" src="/Images/Header.png"> -->
+      <!-- <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" 
+            href="#home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" 
+            href="#bio">Bio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" 
+            href="#contact">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" 
+            href="#links">Links</a>
+          </li>
+        </ul>
+      </nav> -->
+  </header>
+
+  <div class="wrapper">
+    <p class="we">
+      We are Fighting Sparrow!
+    </p>
+
+    <svg><use xlink:href="images/sprites.svg#facebook"></use></svg>
+
+    <div class="members">
+        <img 
+        src="/Images/tzrni-lazy.png"
+        data-src="/Images/tzrni.png" 
+        alt="tzrni" 
+        class="members--img lazy-img">
+        <div class="member--text">
+          <h4>Milan Stevanović - Tzrni</h4>
+          <p>Vocals, banjo, irish bouzouki & mandolin.</p>
+        </div>
+
+        <div class="member--text">
+          <h4>Aleksandar Mitić - Mav</h4>
+          <p>Vocals, bass</p>
+        </div>
+        <img 
+        src="/Images/mav-lazy.png"
+        data-src="/Images/mav.png" 
+        alt="mav" 
+        class="members--img lazy-img">
+        
+        <img 
+        src="/Images/peky-lazy.png"
+        data-src="/Images/peky.png" 
+        alt="peky"
+        class="members--img lazy-img">
+        <div class="member--text">
+          <h4>Petar Milošević - Peky</h4>
+          <p>Vocals, guitars</p>
+        </div>
+
+        <div class="member--text">
+          <h4>Aleksandar Djordjević - Czoa</h4>
+          <p>Tin whistle</p>
+        </div>
+        <img 
+        src="/Images/coa-lazy.png"
+        data-src="/Images/coa.png" 
+        alt="coa"
+        class="members--img lazy-img">
+        
+        <img 
+        src="/Images/mehighlow-lazy.png"
+        data-src="/Images/mehighlow.png" 
+        alt="mehighlow"
+        class="members--img lazy-img">
+        <div class="member--text">
+          <h4>Mihajlo Stefanović - MeHighLow</h4>
+          <p>Drums & percussions</p>
+        </div>
+    </div>
+  </div>
+  <footer class="footer">
+    Copyright by Fighting Sparrow
+  </footer>
+
+  <div id="overlay"></div>
+</body>
+</html>
